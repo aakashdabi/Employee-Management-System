@@ -1,0 +1,65 @@
+<div class="container mt-5 d-flex justify-content-center">
+  <div class="card shadow-lg w-50">
+    <div class="card-header text-center" style="background-color:#556B2F; color:white;">
+      <h4>Update Employee</h4>
+    </div>
+    <div class="card-body" style="background-color:#f9f9f9;">
+      
+      <form #empForm="ngForm" (ngSubmit)="onSubmit()">
+        
+        <div class="mb-3">
+          <label class="form-label fw-bold">Employee Name</label>
+          <input type="text" 
+                 class="form-control"
+                 id="ename"
+                 placeholder="Enter Employee Name"
+                 [(ngModel)]="employee.ename" 
+                 name="empName"
+                 required>
+          <div *ngIf="empForm.submitted && !employee.ename" class="text-danger">
+            Name is required
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label fw-bold">Designation</label>
+          <input type="text" 
+                 class="form-control"
+                 id="designation"
+                 placeholder="Enter Designation"
+                 [(ngModel)]="employee.designation" 
+                 name="designation"
+                 required>
+          <div *ngIf="empForm.submitted && !employee.designation" class="text-danger">
+            Designation is required
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label fw-bold">Salary</label>
+          <input type="number" 
+                 class="form-control"
+                 id="salary"
+                 placeholder="Enter Salary"
+                 [(ngModel)]="employee.salary" 
+                 name="salary"
+                 required>
+          <div *ngIf="empForm.submitted && !employee.salary" class="text-danger">
+            Salary is required
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <button type="submit" 
+                  class="btn btn-success px-5"
+                  [disabled]="!empForm.valid">
+            Update Employee
+          </button>
+          <button type="reset" class="btn btn-secondary ms-2 px-4">Clear</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+

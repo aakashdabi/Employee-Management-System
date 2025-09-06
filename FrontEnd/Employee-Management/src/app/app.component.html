@@ -1,0 +1,30 @@
+<header class="header">
+  <div class="container">
+    <h4>Akash's Tech World</h4>
+  </div>
+</header>
+
+<h1>Welcome to Employee Management System</h1>
+
+<nav style="background-color: darkolivegreen;" class="navbar navbar-expand-sm navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="employees" routerLinkActive="active" class="nav-link">Employee List</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="create-employee" routerLinkActive="active" class="nav-link">Create Employee</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="employees" routerLinkActive="active" class="nav-link">Return</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ✅ Router ke saare components yaha load honge -->
+<router-outlet></router-outlet>
+
+<footer class="footer">
+  <div class="container">
+    <span>All Rights Reserved AKs Consultancy</span>
+  </div>
+</footer>
