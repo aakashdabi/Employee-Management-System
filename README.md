@@ -11,26 +11,6 @@ A full-stack web application to manage employees, built with **Angular** (Fronte
 - REST APIs with Spring Boot backend
 - Exception handling and validation
 
----
-
-## Project Structure
-
-Employee-Management-System/
-│
-├─ Backend/ # Spring Boot backend
-│ ├─ src/
-│ ├─ .gitignore
-│ ├─ pom.xml
-│ └─ mvnw, mvnw.cmd, etc.
-│
-├─ FrontEnd/Employee-Management/ # Angular frontend
-│ ├─ src/
-│ ├─ package.json
-│ ├─ angular.json
-│ └─ .gitignore, etc.
-│
-└─ README.md
-
 
 ## Technologies Used
 
